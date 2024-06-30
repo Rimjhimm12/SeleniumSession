@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Open Cart Suite_1" verbose="2" thread-count="2" parallel="tests">
+
+	
+	<test name="Open_Cart login_page Test">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/register"/>
+		<parameter name="username" value="rimjhimmallick6@gmail.com"/>
+		<parameter name="password" value="8116999179"/>
+		<classes>
+			<class name="opencart.OpenCartShopping" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+</suite>

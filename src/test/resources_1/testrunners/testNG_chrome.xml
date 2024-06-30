@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Open Cart Suite" verbose="2" thread-count="4" parallel="tests">
+
+	<test name="Open Cart Home Page Test_chrome">
+		<parameter name="browser" value ="chrome"/>
+		<parameter name="url" value ="https://naveenautomationlabs.com/opencart/index.php?route=common/home"/>
+		<classes>
+			<class name="opencart.OPHomePage" />
+		</classes>
+	</test>
+	
+	
+	
+	<test name="Open Cart Login Page Test_chrome">
+		<parameter name="browser" value ="chrome"/>
+		<parameter name="url" value ="https://naveenautomationlabs.com/opencart/index.php?route=account/login"/>
+		
+		<classes>
+			<class name="opencart.OPLoginPage" />
+		</classes>
+	</test>
+	
+	
+	
+	<test name="Open Cart Register Page Test_chrome">
+		<parameter name="browser" value ="chrome"/>
+		<parameter name="url" value ="https://naveenautomationlabs.com/opencart/index.php?route=account/register"/>
+		<classes>
+			<class name="opencart.OPRegistationPage" />
+		</classes>
+	</test>
+	
+	
+	
+	<test name="Open Cart forgotten password Page Test_chrome">
+		<parameter name="browser" value ="chrome"/>
+		<parameter name="url" value ="https://naveenautomationlabs.com/opencart/index.php?route=account/forgotten"/>
+		<classes>
+			<class name="opencart.OPForgotPasswordPage" />
+		</classes>
+	</test>
+	
+
+
+</suite>
